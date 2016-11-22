@@ -1,0 +1,337 @@
+\usepackage{amsmath,amssymb}             % AMS Math
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage[left=1.1in,right=0.9in,top=0.4in,bottom=0.7in,includefoot,includehead,headheight=25.9pt]{geometry}
+%\usepackage{verbatim}
+
+%	Boolean includes
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{fixltx2e}
+%\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+%\usepackage{t1enc}
+\usepackage{textcomp}
+%\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+%\usepackage{hyperref}
+%\usepackage{amsmath}
+\tolerance=1000
+\providecommand{\alert}[1]{\textbf{#1}}
+
+%	Resources includes
+%\usepackage{multicol}
+%\usepackage[hang, bf]{caption}
+%\usepackage[automark]{scrpage2}
+%\usepackage[utf8]{inputenc}
+%\usepackage[american]{babel}
+%\usepackage{graphicx}%[pdftex]
+%\usepackage[
+%    %pdftex,
+%    a4paper,
+%    bookmarks,
+%    bookmarksopen=true,
+%    bookmarksnumbered=true,
+%    pdfauthor={Christian Diener},
+%    pdftitle={},
+%    colorlinks,
+%    linkcolor=black,
+%    citecolor=black,
+%    urlcolor=black
+%]{hyperref}
+\usepackage[svgnames]{xcolor}
+%The following two lines import the AMS math packages and its environments
+%The option intlimits forces the limits of an integral to be drawn above and
+%below the integral sign
+%and NOT shifted to the right
+%\usepackage[intlimits]{amsmath}
+%\usepackage{amsfonts}
+%usepackage{amssymb}
+%\usepackage{listings}
+%\usepackage[round]{natbib}
+
+%\usepackage{abstract}
+
+\newcommand{\dt}[1]{\frac{d [\mathrm{#1}]}{dt}}
+\newcommand{\sdt}[1]{\frac{d #1}{dt}}
+\newcommand{\C}[1]{[\mathrm{#1}]}
+\DeclareMathOperator{\im}{\mathfrak{Im}}
+\DeclareMathOperator{\re}{\mathfrak{Re}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\id}{\mathbf{id}}
+\DeclareMathOperator{\Prob}{\mathbb{P}}
+\DeclareMathOperator{\St}{\mathbf{S}(t)}
+\DeclareMathOperator{\Div}{\mathbf{div}}
+\DeclareMathOperator{\Var}{\mathbf{Var}}
+\usepackage{subfig}
+
+
+%	Copasi includes
+%\usepackage{epsfig}
+\usepackage{chemarr}
+%\usepackage{graphicx}
+%\usepackage{hyperref}
+%\usepackage{pdfpages}
+
+
+
+\renewcommand{\baselinestretch}{1.05}
+
+% Table of contents for each chapter
+
+%\usepackage[nottoc, notlof, notlot, notbib]{tocbibind}
+%\usepackage[english]{minitoc}
+%\setcounter{minitocdepth}{2}
+%\mtcindent=15pt
+% Use \minitoc where to put a table of contents
+
+%\usepackage{aecompl}
+
+% Glossary / list of abbreviations
+
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{List of Abbreviations}
+
+\makenomenclature
+
+% My pdf code
+
+\usepackage{ifpdf}
+
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  \DeclareGraphicsExtensions{.jpg}
+  \usepackage[pagebackref,hyperindex=true]{hyperref}
+\else
+  \usepackage{graphicx}
+  \DeclareGraphicsExtensions{.ps,.eps}
+  \usepackage[a4paper,dvipdfm,pagebackref,hyperindex=true]{hyperref}
+\fi
+
+\graphicspath{{.}{images/}}
+
+% nicer backref links
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{%
+\ifcase #1 %
+(Not cited.)%
+\or
+(Cited on page~#2.)%
+\else
+(Cited on pages~#2.)%
+\fi}
+\renewcommand*{\backrefsep}{, }
+\renewcommand*{\backreftwosep}{ and~}
+\renewcommand*{\backreflastsep}{ and~}
+
+% Colors, Links in pdf
+\usepackage{color}
+\definecolor{linkcol}{rgb}{0,0,0.4} 
+\definecolor{citecol}{rgb}{0.5,0,0} 
+\definecolor{darkblue}{rgb}{0., 0., .5}
+\definecolor{blue}{rgb}{0., 0., 1}
+\definecolor{darkred}{rgb}{.5, 0., 0.}
+\definecolor{red}{rgb}{1, 0., 0.}
+\definecolor{darkgreen}{rgb}{0., .5, 0.}
+\definecolor{green}{rgb}{0., 1., 0.}
+\definecolor{darkgray}{rgb}{.25, .25, .25}
+\definecolor{lightgray}{rgb}{.70, .70, .70}
+\definecolor{gray}{rgb}{0.5, 0.5, 0.5}
+
+% Change this to change the informations included in the pdf file
+
+% See hyperref documentation for information on those parameters
+
+\hypersetup
+{
+bookmarksopen=true,
+pdftitle="Fachkurs Modellierung biologischer Systeme",
+pdfauthor="Friedemann Uschner (Ed.)", 
+pdfsubject="Fachkurs script - November 2016", %subject of the document
+%pdftoolbar=false, % toolbar hidden
+pdfmenubar=true, %menubar shown
+pdfhighlight=/O, %effect of clicking on a link
+colorlinks=true, %couleurs sur les liens hypertextes
+%pdfpagemode=None, %aucun mode de page
+pdfpagelayout=SinglePage, %ouverture en simple page
+pdffitwindow=true, %pages ouvertes entierement dans toute la fenetre
+linkcolor=linkcol, %couleur des liens hypertextes internes
+citecolor=citecol, %couleur des liens pour les citations
+urlcolor=linkcol %couleur des liens pour les url
+}
+
+% definitions.
+% -------------------
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+% Some useful commands and shortcut for maths:  partial derivative and stuff
+
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\def\abs{\operatorname{abs}}
+\def\argmax{\operatornamewithlimits{arg\,max}}
+\def\argmin{\operatornamewithlimits{arg\,min}}
+\def\diag{\operatorname{Diag}}
+\newcommand{\eqRef}[1]{(\ref{#1})}
+
+\usepackage{rotating}                    % Sideways of figures & tables
+%\usepackage{bibunits}
+%\usepackage[sectionbib]{chapterbib}          % Cross-reference package (Natural BiB)
+%\usepackage{natbib}                  % Put References at the end of each chapter
+                                         % Do not put 'sectionbib' option here.
+                                         % Sectionbib option in 'natbib' will do.
+\usepackage{fancyhdr}                    % Fancy Header and Footer
+
+% \usepackage{txfonts}                     % Public Times New Roman text & math font
+  
+%%% Fancy Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fancy Header Style Options
+
+\pagestyle{fancy}                       % Sets fancy header and footer
+\fancyfoot{}                            % Delete current footer settings
+
+%\renewcommand{\chaptermark}[1]{         % Lower Case Chapter marker style
+%  \markboth{\chaptername\ \thechapter.\ #1}}{}} %
+
+%\renewcommand{\sectionmark}[1]{         % Lower case Section marker style
+%  \markright{\thesection.\ #1}}         %
+
+\fancyhead[LE,RO]{\bfseries\thepage}    % Page number (boldface) in left on even
+% pages and right on odd pages
+\fancyhead[RE]{\bfseries\nouppercase{\leftmark}}      % Chapter in the right on even pages
+\fancyhead[LO]{\bfseries\nouppercase{\rightmark}}     % Section in the left on odd pages
+
+\let\headruleORIG\headrule
+\renewcommand{\headrule}{\color{black} \headruleORIG}
+\renewcommand{\headrulewidth}{1.0pt}
+\usepackage{colortbl}
+\arrayrulecolor{black}
+
+\fancypagestyle{plain}{
+  \fancyhead{}
+  \fancyfoot{}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% \usepackage{algorithm}
+% \usepackage[noend]{algorithmic}
+
+%%% Clear Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Clear Header Style on the Last Empty Odd pages
+\makeatletter
+
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else%
+  \hbox{}%
+  \thispagestyle{empty}%              % Empty header styles
+  \newpage%
+  \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+
+\makeatother
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Prints your review date and 'Draft Version' (From Josullvn, CS, CMU)
+\newcommand{\reviewtimetoday}[2]{\special{!userdict begin
+	/bop-hook{gsave 20 710 translate 45 rotate 0.8 setgray
+      /Times-Roman findfont 12 scalefont setfont 0 0   moveto (#1) show
+      0 -12 moveto (#2) show grestore}def end}}
+% You can turn on or off this option.
+% \reviewtimetoday{\today}{Draft Version}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\newenvironment{maxime}[1]
+{
+\vspace*{0cm}
+\hfill
+\begin{minipage}{0.5\textwidth}%
+%\rule[0.5ex]{\textwidth}{0.1mm}\\%
+\hrulefill $\:$ {\bf #1}\\
+%\vspace*{-0.25cm}
+\it 
+}%
+{%
+
+\hrulefill
+\vspace*{0.5cm}%
+\end{minipage}
+}
+
+%\let\minitocORIG\minitoc
+%\renewcommand{\minitoc}{\minitocORIG \vspace{1.5em}}
+
+\usepackage{multirow}
+%\usepackage{slashbox}
+
+\newenvironment{bulletList}%
+{ \begin{list}%
+	{$\textbullet$}%
+	{\setlength{\labelwidth}{25pt}%
+	 \setlength{\leftmargin}{30pt}%
+	 \setlength{\itemsep}{\parsep}}}%
+{ \end{list} }
+% set up itemization lists to display the bullet points correctly - for whatever reason not working properly
+% (getting bullet points only on the second level of itemization)
+%\usepackage{enumitem}
+%\setlist[itemize,1]{label={\fontfamily{cmr}\fontencoding{T1}\selectfont\textbullet}}
+
+\newtheorem{definition}{Definition}
+\renewcommand{\epsilon}{\varepsilon}
+%\usepackage{hhline,float,booktabs}
+\newcommand*{\thickhline}{\noalign{\hrule height 1pt}}
+% centered page environment
+
+\newenvironment{vcenterpage}
+{\newpage\vspace*{\fill}\thispagestyle{empty}\renewcommand{\headrulewidth}{0pt}}
+{\vspace*{\fill}}
+
+% Marvin new commands
+\usepackage{epsfig}
+\usepackage{chemarr}
+\newcommand{\beq }{\begin{equation}} 
+\newcommand{\eeq }{\end{equation}} 
+\newcommand{\Ii }{I_{\mbox{\scriptsize\it Ion}}} 
+\newcommand{\Iii }{I_{\mbox{\scriptsize\it Ion},i}} 
+\newcommand{\wi }{w_{\infty}}
+\newcommand{\md }{\text{d}}
+\newcommand{\code}[1]{\begin{verbatim}#1\end{verbatim}}
+\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\arraystretch}{1.2}
+
+
+
+
+% weitere Einfügungen
+\setcounter{tocdepth}{1}
+\usepackage{framed}
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage{color}
+
+\hyphenation{tem-pe-ra-tures hy-per-po-la-ri-sing}
+
+\usepackage{comment}
+
+% Matlab chapter
+\usepackage[numbered]{mcode}
+\usepackage{listings}
+
+% [edit: for matlab code to work, this needs to be excluded:]
+%fancyvr bconfig
+% \lstset{numbers=left, numberblanklines=false, 
+% numberstyle=\color{gray}\scriptsize\ttfamily, extendedchars=true, 
+% language=Python, keywordstyle=\bfseries\color{darkblue}, 
+% identifierstyle=\mdseries, stringstyle=\color{darkred}, tabsize=4, 
+% basicstyle=\scriptsize\ttfamily, columns=flexible, showtabs=false, 
+% showspaces=false, showstringspaces=false, morecomment=[s]
+% [\upshape\color{darkgreen}]{/**}{*/}, postbreak={\dots}, prebreak={\dots}, 
+% breakindent=5pt, breaklines, captionpos=b}
+% \newcommand*\command[1][]{\medskip%
+% {\noindent}\allowbreak\colorbox[rgb]{.80,.80,.80}
+% {\allowbreak\makebox[\linewidth][l]{\begin{minipage}[c]
+% {\linewidth}\allowbreak\texttt{#1}\end{minipage}}}\bigskip}
