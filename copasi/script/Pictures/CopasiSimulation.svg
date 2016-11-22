@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   width="808"
+   height="634"
+   version="1.0"
+   sodipodi:docname="CopasiSimulation.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective9" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="968"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.95214378"
+     inkscape:cx="491.70534"
+     inkscape:cy="317"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:current-layer="svg2" />
+  <image
+     xlink:href="CopasiSimulation.png"
+     sodipodi:absref="X:\ckbasar\Presentations\20110320_SysteMTbAM_course\images\CopasiSimulation.png"
+     width="808"
+     height="634"
+     id="image11"
+     x="0"
+     y="0" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="383.89706"
+     y="150.02942"
+     id="text2384"><tspan
+       sodipodi:role="line"
+       id="tspan2386"
+       x="383.89706"
+       y="150.02942"
+       style="fill:#b42121;fill-opacity:1">how long?</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="599.31616"
+     y="88.154411"
+     id="text3158"><tspan
+       sodipodi:role="line"
+       id="tspan3160"
+       x="599.31616"
+       y="88.154411"
+       style="fill:#b42121;fill-opacity:1">careful!</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="385.09558"
+     y="176.30147"
+     id="text3162"><tspan
+       sodipodi:role="line"
+       id="tspan3164"
+       x="385.09558"
+       y="176.30147"
+       style="fill:#b42121;fill-opacity:1">be reasonable!</tspan></text>
+  <rect
+     style="opacity:1;fill:#c8ab37;fill-opacity:0;fill-rule:evenodd;stroke:#b42121;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     id="rect3166"
+     width="211.65442"
+     height="103.97059"
+     x="288.14706"
+     y="328.77206"
+     rx="4.3212895"
+     ry="5.4401617" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="307.17648"
+     y="451.53677"
+     id="text3168"><tspan
+       sodipodi:role="line"
+       id="tspan3170"
+       x="307.17648"
+       y="451.53677"
+       style="fill:#b42121;fill-opacity:1">numerical parameters</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-weight:normal;fill:#b42121;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="620.68384"
+     y="585.55884"
+     id="text3172"><tspan
+       sodipodi:role="line"
+       id="tspan3174"
+       x="620.68384"
+       y="585.55884">¡define/create output!</tspan></text>
+  <rect
+     style="opacity:1;fill:#c8ab37;fill-opacity:0;fill-rule:evenodd;stroke:#b42121;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     id="rect3176"
+     width="193.08824"
+     height="65.352943"
+     x="607.48529"
+     y="561.22058"
+     rx="4.3212895"
+     ry="5.4401617" />
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-weight:normal;fill:#b42121;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+     x="248.10294"
+     y="591.66913"
+     id="text3178"><tspan
+       sodipodi:role="line"
+       id="tspan3180"
+       x="248.10294"
+       y="591.66913">START</tspan></text>
+</svg>
