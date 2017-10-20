@@ -10,12 +10,14 @@ It covers:
 
 
 Schedule:    
-<td colspan=4>  21.11. - 24.11.2017 | - <td colspan=4>  28.11. - 01.12.2017| 
-|Di|Mi|Do|Fr||Di|Mi|Do|Fr|
-|--|--|--|--|--|--|--|--|--|
-|Einführung|Python|How to write a paper|Tellurium| - |Projekt|Projekt|Projekt|Projekt|
-|Python|Präsentationstechniken|Tellurium|Python Packages| - |Projekt|Projekt|Projekt|Vorträge|
+21.11. - 24.11.2017
+|Di|Mi|Do|Fr|
+|--|--|--|--|
+|Einführung    Friedemann|Python|How to write a paper|Tellurium|
+|Python|Präsentationstechniken|Tellurium|Python Packages|
 
-
-
-
+28.11. - 01.12.2017
+|Di|Mi|Do|Fr|
+|--|--|--|--|
+|Projekt|Projekt|Projekt|Projekt|
+|Projekt|Projekt|Projekt|Vorträge|
